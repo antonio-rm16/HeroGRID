@@ -1,0 +1,97 @@
+
+body{
+    background-color:rgb(104, 245, 245);
+    padding-top: 30px;
+}
+.grid{
+    display: grid;
+    width: 760px;
+    height: 100%;
+   /* grid-template-columns: auto 70% 20% auto;*/
+    grid-template-columns: 55px auto 55px;
+    grid-template-rows: auto;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .8;
+}
+
+.imageback{
+grid-column: 1/4;
+grid-row: 1/6;
+}
+
+.imageback > img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+.overlay{
+    grid-column: 2/3;
+    grid-row: 2/5;
+    background-color:hsla(45, 80%,70%,60%);
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    box-shadow: 15px 20px 15px hsla(175, 100%,60%,30%);
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+    
+.title{
+    margin-top: 15px;
+grid-column: 1/3;
+grid-row: 1/2;
+}
+.title > p{
+    margin: 0;
+   font-family: sans-serif;
+    font-size: 24pt;
+    color: rgb(24, 15, 100);
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 15px 10px 2px grey;
+}
+.abstract{
+grid-column: 1/2;
+grid-row: 2/3;
+}
+.abstract > p{
+    font-family: sans-serif;
+    font-size: 18pt;
+    color: rgb(63, 63, 60);
+  padding-right: 30px;
+    font-weight: 600;
+}
+.imagehero{
+grid-column: 2/3;
+grid-row: 2/3;
+}
+.btnaction{
+grid-column: 1/3;
+grid-row: 3/4;
+width: 100%;
+height: 100%;
+text-align: center;
+}
+
+.btnaction > button{
+    width: 250px;
+    height: 70px;
+    border-radius: 25px;
+    border-color: hsl(200,80%, 70%);
+    border-width: 5px;
+    color: yellow;
+    font-weight: 600;
+   /* background-color: hsl(60,65%, 58%);*/
+   background-color:hsl(220,80%, 50%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
